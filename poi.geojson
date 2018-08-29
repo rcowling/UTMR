@@ -1,0 +1,838 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.83620599999995,
+          46.193568,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Ferienhaus Ausblick"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.83905789999994,
+          46.1970501,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Coop Supermarkt Grächen"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.83924500000001,
+          46.1963652,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Volg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.83865089999995,
+          46.1949978,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Denner Satellit"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.83660740000005,
+          46.190924,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gruppenhaus Santa-Fee"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8382637,
+          46.1954831,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Registration"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8381939,
+          46.1954784,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Baggage drop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8386968,
+          46.1954933,
+          0
+        ]
+      },
+      "properties": {
+        "name": "START / FINISH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74998800000003,
+          46.021715,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Alfa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74353819999999,
+          46.0165064,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Alpenrose"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74753659999999,
+          46.0203456,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Alpina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74988570000005,
+          46.0210998,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel City"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74866299999996,
+          46.0211961,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Elite"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74896000000001,
+          46.0208725,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Excelsior"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7462855,
+          46.0205919,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Helvetia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7492489,
+          46.0240111,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Sarazena"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74955190000003,
+          46.0182442,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Stockhorn"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74722659999998,
+          46.0203285,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Tannenhof"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74586339999996,
+          46.0190009,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Weisshorn"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74884599999996,
+          46.0234151,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Coop Supermarkt Zermatt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74822840000002,
+          46.0217304,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Migros"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7486041,
+          46.0223268,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Toilets"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7486819,
+          46.0224087,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Baggage pickup, drop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.82283640000003,
+          45.8311577,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Dufour"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.82337899999993,
+          45.826638,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Lo Scoiattolo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.82389999999998,
+          45.83153,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Valverde"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.82318899999996,
+          45.831462,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Romantik Hotel Jolanda Sport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74813440000003,
+          46.0240284,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Ristorante Pizzeria Non Solo Treno"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8226089,
+          45.8318269,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sala Polivalente",
+        "description": "(Registration, Baggage drop, ULTRA drop bags)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.82266000000004,
+          45.82971,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Welf Anna Lucia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.82544540000004,
+          45.8281362,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Extreme Sport Di Tarnoczy Sergio"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.821815,
+          45.8323072,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Car Park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9690376,
+          45.9677446,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Albergo Macugnaga",
+        "description": "Albergo Ristorante Macugnaga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.96671500000002,
+          45.970037,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Casa Alpina Don Guanella"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.96276880000005,
+          45.9688402,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dream Hotel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9688643,
+          45.9678455,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Cima Jazzi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.967943,
+          45.9683251,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Flora"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9675132,
+          45.968216,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hotel Dufour"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.96980719999999,
+          45.9677847,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Residence Monte Rosa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.960209,
+          45.9717638,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Race Dinner Tent",
+        "description": "Dining here."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.96834809999996,
+          45.9680081,
+          0
+        ]
+      },
+      "properties": {
+        "name": "The SHOP of ALBIS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.805944,
+          46.105735,
+          2261.1
+        ]
+      },
+      "properties": {
+        "name": "CP1.Europahütte"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.810188,
+          46.059161,
+          2162
+        ]
+      },
+      "properties": {
+        "name": "CP2.Täschalp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7499875,
+          46.0226433,
+          0
+        ]
+      },
+      "properties": {
+        "name": "CP3.Zermatt"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.725352,
+          45.964166,
+          2928.8
+        ]
+      },
+      "properties": {
+        "name": "CP4.Gandegghütte"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.708522,
+          45.944101,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Theodul Rifugio (Emergency Assistance)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.680285,
+          45.929611,
+          2813.1
+        ]
+      },
+      "properties": {
+        "name": "CP5.Lago Cima Bianche"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.740093,
+          45.865984,
+          2077
+        ]
+      },
+      "properties": {
+        "name": "CP6.Rifugio Ferraro"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.822868,
+          45.827175,
+          1629.2
+        ]
+      },
+      "properties": {
+        "name": "Finish Start Gressoney",
+        "description": "<img src=\"https://lh3.googleusercontent.com/BT-nQYXfn7IL1fuV-RpX2DQUj2rVaDonUSJii0s5oPZteBeY0ESLi34g54D3u8ulVuJxWCgAXaJ-HNbLDGat2LkCqZ3vNd4lwVdA2w9WCj5XPhKmxCVWCozGSNlUPOfW\" height=\"200\" width=\"auto\" /><br><br>",
+        "gx_media_links": "https://lh3.googleusercontent.com/BT-nQYXfn7IL1fuV-RpX2DQUj2rVaDonUSJii0s5oPZteBeY0ESLi34g54D3u8ulVuJxWCgAXaJ-HNbLDGat2LkCqZ3vNd4lwVdA2w9WCj5XPhKmxCVWCozGSNlUPOfW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8227323,
+          45.8318587,
+          0
+        ]
+      },
+      "properties": {
+        "name": "CP7.Gressoney",
+        "description": "Checkpoint for Ultra 170"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.866269,
+          45.876187,
+          2927
+        ]
+      },
+      "properties": {
+        "name": "CP8.Passo dei Salati"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.938831,
+          45.846666,
+          0
+        ]
+      },
+      "properties": {
+        "name": "CP9.Alagna"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9579,
+          45.902819,
+          2701
+        ]
+      },
+      "properties": {
+        "name": "Colle del Turlo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.977434,
+          45.939759,
+          1382.5
+        ]
+      },
+      "properties": {
+        "name": "CP10.Quarazza"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9678204,
+          45.9683711,
+          0
+        ]
+      },
+      "properties": {
+        "name": "CP11.Macugnaga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.978977,
+          45.996607,
+          2789.1
+        ]
+      },
+      "properties": {
+        "name": "CP12.Passo.Monte.Moro"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.925103,
+          46.107674,
+          0
+        ]
+      },
+      "properties": {
+        "name": "CP13.SaasFee"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.867974,
+          46.206339,
+          2120.6
+        ]
+      },
+      "properties": {
+        "name": "CP14.Hannigalp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.822338,
+          45.8315858,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Shuttle bus",
+        "description": "Shuttle bus drop from Airport / DNF pickup"
+      }
+    }
+  ]
+}
