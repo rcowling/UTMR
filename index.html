@@ -67,6 +67,12 @@ nav a.button-collapse {
 #awtd1520968215226 {
     padding-top: 3px;
 }
+        
+.btn{
+    position: absolute;
+    top: 10px;
+    left: 240px;
+}     
 
     </style>
 </head>
@@ -76,7 +82,8 @@ nav a.button-collapse {
          
       <a href="#!" class="brand-logo center" style="font-family: 'Kalam', cursive; font-size: 30px;">
       <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a> 
-      <img src="logo1.png" alt="utmr logo" style="width:82px;height:82px;">    
+      <img src="logo1.png" alt="utmr logo" style="width:82px;height:82px;">
+          
         <ul class="right hide-on-med-and-down">       
       </ul>
       <ul class="side-nav" id="mobile-demo">
@@ -99,7 +106,19 @@ nav a.button-collapse {
               closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
              }
             );
+            
+           
         </script>
+    
+<ul id="dropdown2" class="dropdown-content">
+  <li onclick="fourStage(map);"><a href="#">4STAGE</a></li>
+  <li onclick="hundredKmStage(map);"><a href="#">ULTRA100</a></li>
+  <li onclick="allStage(map);"><a href="#">ULTRA170</a></li>    
+</ul>
+<a class="dropdown-button btn black" href="#!" data-activates="dropdown2">TRACKS
+<i class="material-icons right">map</i>
+</a>
+    
 <div id='map'></div>
 
 <script>
@@ -122,8 +141,26 @@ map.addControl(new mapboxgl.GeolocateControl({
         enableHighAccuracy: true
     },
     trackUserLocation: true
-}));     
+})); 
 
+function fourStage(map) {
+    map.setLayoutProperty('4stages', 'visibility', 'visible');
+    map.setLayoutProperty('allstages', 'visibility', 'none');
+    //map.setLayoutProperty('100kmstages', 'visibility', 'none');
+}
+    
+function allStage(map) {
+    map.setLayoutProperty('4stages', 'visibility', 'none');
+    map.setLayoutProperty('allstages', 'visibility', 'visible');
+    //map.setLayoutProperty('100kmstages', 'visibility', 'none');
+}    
+
+function hundredKmStage(map) {
+    map.setLayoutProperty('4stages', 'visibility', 'none');
+    map.setLayoutProperty('allstages', 'visibility', 'none');
+    //map.setLayoutProperty('100kmstages', 'visibility', 'visbile');
+} 
+    
 var poiurl = 'poi.geojson';
 var stagesurl = '4stage.geojson'
 var allstagesurl = 'stageall.geojson'
@@ -173,9 +210,8 @@ map.on('load', function () {
             'visibility': 'none'
         },
         paint: {
-            'line-color': 'red',
-            'line-width': 6.15,
-            'line-opacity': .5
+            'line-color': '#CC2160',
+            'line-width': 3            
         }
     });
     
