@@ -71,7 +71,7 @@ nav a.button-collapse {
 .btn{
     position: absolute;
     top: 10px;
-    left: 180px;
+    left: 170px;
 }     
 
     </style>
@@ -167,17 +167,62 @@ var allstagesurl = 'stageall.geojson'
 var  hundredkmurl = '' // the filename for your 100km track goes here
 
 map.on('load', function () {    
-    map.addSource('poi', { type: 'geojson', data: poiurl });
-    map.addLayer({
-        "id": "poi",
-        "type": "symbol",        
-        "source": "poi",
-        "layout": {
-            "icon-image": "rocket-15",
-            "visibility": "visible"
-        }
-    });
+    // Load Custom Icons
+    // Load icons
+	map.loadImage('cptest.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('cp', image);
+	});
+	map.loadImage('food.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('food', image);
+	});
+	map.loadImage('bus.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bus', image);
+	});
+	map.loadImage('hotel.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('hotel', image);
+	});
+	map.loadImage('important.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('emergency', image);
+	});
+	map.loadImage('baggage.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('baggage', image);
+	});
+	map.loadImage('shopping.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('shopping', image);
+	});
     
+    map.loadImage('restrooms.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('restrooms', image);
+	});
+    
+     map.loadImage('parking.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('parking', image);
+	});
+    
+    map.loadImage('sport.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('sport', image);
+	});
+    
+    map.loadImage('registration.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('registration', image);
+	});
+    
+    map.loadImage('startfin.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('startfin', image);
+	});
+    // Add Layers to the map   
     map.addSource('4stage', { type: 'geojson', data: stagesurl });
     map.addLayer({
         "id": "4stages",
@@ -230,6 +275,38 @@ map.on('load', function () {
             'line-opacity': .5
         }
     });*/
+    
+     map.addSource('poi', { type: 'geojson', data: poiurl });
+    map.addLayer({
+        "id": "poi",
+        "type": "symbol",        
+        "source": "poi",
+        "layout": {
+            "icon-image": [
+                'match',
+                ['get', 'description'],
+                'cp', 'cp',
+                'shopping', 'shopping',
+                'restrooms', 'restrooms',
+                'hotel', 'hotel',
+                'baggage', 'baggage',
+                'dining', 'food',
+                'eating', 'food',
+                'bus', 'bus',
+                'emergency', 'important',
+                'important', 'important',
+                'parking', 'parking',
+                '(Registration, Baggage drop, ULTRA drop bags)', 'important',
+                'sport', 'sport',
+                'registration', 'registration',
+                'start', 'startfin',
+                /* other */ 'clues'
+            ],
+            "visibility": "visible",
+            "icon-size": .1,
+            "icon-allow-overlap": true
+        }
+    });
 });
 </script>
 

@@ -12,7 +12,8 @@
         ]
       },
       "properties": {
-        "name": "Ferienhaus Ausblick"
+        "name": "Ferienhaus Ausblick",
+        "description": "hotel"
       }
     },
     {
@@ -26,7 +27,8 @@
         ]
       },
       "properties": {
-        "name": "Coop Supermarkt Grächen"
+        "name": "Coop Supermarkt Gr?chen",
+        "description": "shopping"
       }
     },
     {
@@ -40,7 +42,8 @@
         ]
       },
       "properties": {
-        "name": "Volg"
+        "name": "Volg",
+        "description": "shopping"
       }
     },
     {
@@ -54,7 +57,8 @@
         ]
       },
       "properties": {
-        "name": "Denner Satellit"
+        "name": "Denner Satellit",
+        "description": "shopping"
       }
     },
     {
@@ -68,7 +72,8 @@
         ]
       },
       "properties": {
-        "name": "Gruppenhaus Santa-Fee"
+        "name": "Gruppenhaus Santa-Fee",
+        "description": "hotel"
       }
     },
     {
@@ -82,7 +87,8 @@
         ]
       },
       "properties": {
-        "name": "Registration"
+        "name": "Registration",
+        "description": "registration"
       }
     },
     {
@@ -96,7 +102,8 @@
         ]
       },
       "properties": {
-        "name": "Baggage drop"
+        "name": "Baggage drop",
+        "description": "baggage"
       }
     },
     {
@@ -110,7 +117,8 @@
         ]
       },
       "properties": {
-        "name": "START / FINISH"
+        "name": "START / FINISH",
+        "description": "start"
       }
     },
     {
@@ -124,7 +132,9 @@
         ]
       },
       "properties": {
-        "name": "Hotel Alfa"
+        "name": "Hotel Alfa",
+        "description": "hotel",
+        "gx_media_links": ""
       }
     },
     {
@@ -138,7 +148,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Alpenrose"
+        "name": "Hotel Alpenrose",
+        "description": "hotel"
       }
     },
     {
@@ -152,7 +163,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Alpina"
+        "name": "Hotel Alpina",
+        "description": "hotel"
       }
     },
     {
@@ -166,7 +178,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel City"
+        "name": "Hotel City",
+        "description": "hotel"
       }
     },
     {
@@ -180,7 +193,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Elite"
+        "name": "Hotel Elite",
+        "description": "hotel"
       }
     },
     {
@@ -194,7 +208,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Excelsior"
+        "name": "Hotel Excelsior",
+        "description": "hotel"
       }
     },
     {
@@ -208,7 +223,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Helvetia"
+        "name": "Hotel Helvetia",
+        "description": "hotel"
       }
     },
     {
@@ -222,7 +238,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Sarazena"
+        "name": "Hotel Sarazena",
+        "description": "hotel"
       }
     },
     {
@@ -236,7 +253,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Stockhorn"
+        "name": "Hotel Stockhorn",
+        "description": "hotel"
       }
     },
     {
@@ -250,7 +268,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Tannenhof"
+        "name": "Hotel Tannenhof",
+        "description": "hotel"
       }
     },
     {
@@ -264,7 +283,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Weisshorn"
+        "name": "Hotel Weisshorn",
+        "description": "hotel"
       }
     },
     {
@@ -278,7 +298,8 @@
         ]
       },
       "properties": {
-        "name": "Coop Supermarkt Zermatt"
+        "name": "Coop Supermarkt Zermatt",
+        "description": "shopping"
       }
     },
     {
@@ -292,7 +313,8 @@
         ]
       },
       "properties": {
-        "name": "Migros"
+        "name": "Migros",
+        "description": "shopping"
       }
     },
     {
@@ -306,7 +328,8 @@
         ]
       },
       "properties": {
-        "name": "Toilets"
+        "name": "Toilets",
+        "description": "restrooms"
       }
     },
     {
@@ -320,7 +343,8 @@
         ]
       },
       "properties": {
-        "name": "Baggage pickup, drop"
+        "name": "Baggage pickup, drop",
+        "description": "baggage"
       }
     },
     {
@@ -334,7 +358,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Dufour"
+        "name": "Hotel Dufour",
+        "description": "hotel"
       }
     },
     {
@@ -348,7 +373,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Lo Scoiattolo"
+        "name": "Hotel Lo Scoiattolo",
+        "description": "hotel"
       }
     },
     {
@@ -362,7 +388,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Valverde"
+        "name": "Hotel Valverde",
+        "description": "hotel"
       }
     },
     {
@@ -376,7 +403,8 @@
         ]
       },
       "properties": {
-        "name": "Romantik Hotel Jolanda Sport"
+        "name": "Romantik Hotel Jolanda Sport",
+        "description": "hotel"
       }
     },
     {
@@ -390,7 +418,8 @@
         ]
       },
       "properties": {
-        "name": "Ristorante Pizzeria Non Solo Treno"
+        "name": "Ristorante Pizzeria Non Solo Treno",
+        "description": "eating"
       }
     },
     {
@@ -419,7 +448,8 @@
         ]
       },
       "properties": {
-        "name": "Welf Anna Lucia"
+        "name": "Welf Anna Lucia",
+        "description": "shopping"
       }
     },
     {
@@ -433,7 +463,8 @@
         ]
       },
       "properties": {
-        "name": "Extreme Sport Di Tarnoczy Sergio"
+        "name": "Extreme Sport Di Tarnoczy Sergio",
+        "description": "sport"
       }
     },
     {
@@ -447,7 +478,8 @@
         ]
       },
       "properties": {
-        "name": "Car Park"
+        "name": "Car Park",
+        "description": "parking"
       }
     },
     {
@@ -462,7 +494,7 @@
       },
       "properties": {
         "name": "Albergo Macugnaga",
-        "description": "Albergo Ristorante Macugnaga"
+        "description": "hotel"
       }
     },
     {
@@ -476,7 +508,8 @@
         ]
       },
       "properties": {
-        "name": "Casa Alpina Don Guanella"
+        "name": "Casa Alpina Don Guanella",
+        "description": "hotel"
       }
     },
     {
@@ -490,7 +523,8 @@
         ]
       },
       "properties": {
-        "name": "Dream Hotel"
+        "name": "Dream Hotel",
+        "description": "hotel"
       }
     },
     {
@@ -504,7 +538,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Cima Jazzi"
+        "name": "Hotel Cima Jazzi",
+        "description": "hotel"
       }
     },
     {
@@ -518,7 +553,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Flora"
+        "name": "Hotel Flora",
+        "description": "hotel"
       }
     },
     {
@@ -532,7 +568,8 @@
         ]
       },
       "properties": {
-        "name": "Hotel Dufour"
+        "name": "Hotel Dufour",
+        "description": "hotel"
       }
     },
     {
@@ -546,7 +583,8 @@
         ]
       },
       "properties": {
-        "name": "Residence Monte Rosa"
+        "name": "Residence?Monte Rosa",
+        "description": "hotel"
       }
     },
     {
@@ -561,7 +599,7 @@
       },
       "properties": {
         "name": "Race Dinner Tent",
-        "description": "Dining here."
+        "description": "dining"
       }
     },
     {
@@ -575,7 +613,8 @@
         ]
       },
       "properties": {
-        "name": "The SHOP of ALBIS"
+        "name": "The SHOP of ALBIS",
+        "description": "shopping"
       }
     },
     {
@@ -589,7 +628,8 @@
         ]
       },
       "properties": {
-        "name": "CP1.Europahütte"
+        "name": "CP1.Europah?tte",
+        "description": "cp"
       }
     },
     {
@@ -603,7 +643,8 @@
         ]
       },
       "properties": {
-        "name": "CP2.Täschalp"
+        "name": "CP2.T?schalp",
+        "description": "cp"
       }
     },
     {
@@ -617,7 +658,8 @@
         ]
       },
       "properties": {
-        "name": "CP3.Zermatt"
+        "name": "CP3.Zermatt",
+        "description": "cp"
       }
     },
     {
@@ -631,7 +673,8 @@
         ]
       },
       "properties": {
-        "name": "CP4.Gandegghütte"
+        "name": "CP4.Gandeggh?tte",
+        "description": "cp"
       }
     },
     {
@@ -645,7 +688,8 @@
         ]
       },
       "properties": {
-        "name": "Theodul Rifugio (Emergency Assistance)"
+        "name": "Theodul Rifugio (Emergency Assistance)",
+        "description": "emergency"
       }
     },
     {
@@ -659,7 +703,8 @@
         ]
       },
       "properties": {
-        "name": "CP5.Lago Cima Bianche"
+        "name": "CP5.Lago Cima Bianche",
+        "description": "cp"
       }
     },
     {
@@ -673,7 +718,8 @@
         ]
       },
       "properties": {
-        "name": "CP6.Rifugio Ferraro"
+        "name": "CP6.Rifugio Ferraro",
+        "description": "cp"
       }
     },
     {
@@ -688,7 +734,7 @@
       },
       "properties": {
         "name": "Finish Start Gressoney",
-        "description": "<img src=\"https://lh3.googleusercontent.com/BT-nQYXfn7IL1fuV-RpX2DQUj2rVaDonUSJii0s5oPZteBeY0ESLi34g54D3u8ulVuJxWCgAXaJ-HNbLDGat2LkCqZ3vNd4lwVdA2w9WCj5XPhKmxCVWCozGSNlUPOfW\" height=\"200\" width=\"auto\" /><br><br>",
+        "description": "startfin",
         "gx_media_links": "https://lh3.googleusercontent.com/BT-nQYXfn7IL1fuV-RpX2DQUj2rVaDonUSJii0s5oPZteBeY0ESLi34g54D3u8ulVuJxWCgAXaJ-HNbLDGat2LkCqZ3vNd4lwVdA2w9WCj5XPhKmxCVWCozGSNlUPOfW"
       }
     },
@@ -704,7 +750,7 @@
       },
       "properties": {
         "name": "CP7.Gressoney",
-        "description": "Checkpoint for Ultra 170"
+        "description": "cp"
       }
     },
     {
@@ -718,7 +764,8 @@
         ]
       },
       "properties": {
-        "name": "CP8.Passo dei Salati"
+        "name": "CP8.Passo dei Salati",
+        "description": "cp"
       }
     },
     {
@@ -732,7 +779,8 @@
         ]
       },
       "properties": {
-        "name": "CP9.Alagna"
+        "name": "CP9.Alagna",
+        "description": "cp"
       }
     },
     {
@@ -746,7 +794,8 @@
         ]
       },
       "properties": {
-        "name": "Colle del Turlo"
+        "name": "Colle del Turlo",
+        "description": "important"
       }
     },
     {
@@ -760,7 +809,8 @@
         ]
       },
       "properties": {
-        "name": "CP10.Quarazza"
+        "name": "CP10.Quarazza",
+        "description": "cp"
       }
     },
     {
@@ -774,7 +824,8 @@
         ]
       },
       "properties": {
-        "name": "CP11.Macugnaga"
+        "name": "CP11.Macugnaga",
+        "description": "cp"
       }
     },
     {
@@ -788,7 +839,8 @@
         ]
       },
       "properties": {
-        "name": "CP12.Passo.Monte.Moro"
+        "name": "CP12.Passo.Monte.Moro",
+        "description": "cp"
       }
     },
     {
@@ -802,7 +854,8 @@
         ]
       },
       "properties": {
-        "name": "CP13.SaasFee"
+        "name": "CP13.SaasFee",
+        "description": "cp"
       }
     },
     {
@@ -816,7 +869,8 @@
         ]
       },
       "properties": {
-        "name": "CP14.Hannigalp"
+        "name": "CP14.Hannigalp",
+        "description": "cp"
       }
     },
     {
@@ -831,7 +885,8 @@
       },
       "properties": {
         "name": "Shuttle bus",
-        "description": "Shuttle bus drop from Airport / DNF pickup"
+        "description": "bus",
+        "gx_media_links": "Shuttle bus drop from Airport / DNF pickup"
       }
     }
   ]
