@@ -15,8 +15,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     
     <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; margin-top: 56px; z-index: -1; }
+body {
+    margin:0; padding:0; 
+}
+#map { 
+    position:absolute; top:0; bottom:0; width:100%; margin-top: 56px; z-index: -1;
+}
+        
 .material-icons {
     color: white;
 }
@@ -219,25 +224,25 @@ map.addControl(new mapboxgl.GeolocateControl({
 function fourStage(map) {
     map.setLayoutProperty('4stages', 'visibility', 'visible');
     map.setLayoutProperty('allstages', 'visibility', 'none');
-    //map.setLayoutProperty('100kmstages', 'visibility', 'none');
+    map.setLayoutProperty('100kmstages', 'visibility', 'none');
 }
     
 function allStage(map) {
     map.setLayoutProperty('4stages', 'visibility', 'none');
     map.setLayoutProperty('allstages', 'visibility', 'visible');
-    //map.setLayoutProperty('100kmstages', 'visibility', 'none');
+    map.setLayoutProperty('100kmstages', 'visibility', 'none');
 }    
 
 function hundredKmStage(map) {
     map.setLayoutProperty('4stages', 'visibility', 'none');
     map.setLayoutProperty('allstages', 'visibility', 'none');
-    //map.setLayoutProperty('100kmstages', 'visibility', 'visbile');
+    map.setLayoutProperty('100kmstages', 'visibility', 'visible');
 } 
     
 var poiurl = 'poi.geojson';
 var stagesurl = '4stage.geojson'
 var allstagesurl = 'stageall.geojson'
-var  hundredkmurl = '' // the filename for your 100km track goes here
+var  hundredkmurl = 'hundredk.geojson' // the filename for your 100km track goes here
 
 map.on('load', function () {    
     // Load Custom Icons
@@ -333,7 +338,7 @@ map.on('load', function () {
         }
     });
     
-    /*// This is for the missing 100km stage. Simply add the file path to the variable declared above. 
+    // This is for the missing 100km stage. Simply add the file path to the variable declared above. 
     map.addSource('100kmstage', { type: 'geojson', data: hundredkmurl });
     map.addLayer({
         "id": "100kmstages",
@@ -343,17 +348,17 @@ map.on('load', function () {
             'visibility': 'none'
         },
         paint: {
-            'line-color': 'red',
-            'line-width': 6.15,
-            'line-opacity': .5
+            'line-color': '#6A2F44',
+            'line-width': 3,            
         }
-    });*/
+    });
     
     map.addSource('poi', { type: 'geojson', data: poiurl });
     map.addLayer({
         "id": "poi",
         "type": "symbol",        
         "source": "poi",
+        "minzoom": 12,
         "layout": {
             "icon-image": [
                 'match',
@@ -388,7 +393,29 @@ map.on('load', function () {
         new mapboxgl.Popup()
             .setLngLat(e.lngLat)          
             .setHTML('<b>'+feature.properties.name+'</b>')                   
-            .addTo(map); // Add the popup to the map        
+            .addTo(map); // Add the popup to the map       
+    });
+    
+    // Add poi labels
+    map.addLayer({
+        'id': 'poi_labels',
+        'type': 'symbol',
+        'source': 'poi',
+        //'source-layer': 'poi',
+        'minzoom': 12,
+        'layout': {
+            'symbol-placement': 'point',            
+            'text-font': ['Open Sans Regular'],
+            'text-field': '{name}',
+            'text-size': 12,
+            "text-anchor": "bottom",
+            "text-offset": [0,2.3]
+        },
+        'paint': {
+            'text-halo-width': 1.5,
+            'text-halo-color': 'rgba(255,255,255,0.95)',
+            'text-halo-blur': 1
+        }
     });
 });
 </script>
