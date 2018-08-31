@@ -12,6 +12,8 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; margin-top: 56px; z-index: -1; }
@@ -56,6 +58,8 @@ nav .brand-logo {
 
 .side-nav {
     z-index: 90000 !important;
+    /*background-color: #0B57A5;*/
+    
 }
 
 @media only screen and (min-width: 993px){
@@ -72,43 +76,112 @@ nav a.button-collapse {
     position: absolute;
     top: 10px;
     left: 170px;
-}     
+}
+    
+h10 {
+    font-size: 20px;
+    color: #E6A922;
+}    
+        
+        
+.dropdown-content li>a, .dropdown-content li>span {
+    color: black;
+}
+        
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+ 
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+        
+/* Main content */
+.main {
+  margin-left: 240px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */  
+}
 
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  color: black;    
+}
+        
+button:focus {
+    background-color: white !important;
+}        
+        
     </style>
 </head>
 <body>
 <nav class="default" role="navigation">
-    <div class="nav-wrapper">
-         
+    <div class="nav-wrapper">         
       <a href="#!" class="brand-logo center" style="font-family: 'Kalam', cursive; font-size: 30px;">
       <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a> 
-      <img src="logo1.png" alt="utmr logo" style="width:82px;height:82px;">
+      <img src="logo1.png" alt="utmr logo" style="width:82px;height:82px;padding-top:1px;">
           
         <ul class="right hide-on-med-and-down">       
       </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Trail Map</a></li>   
-        <li><a href="weather.html">Weather</a></li>
-        <li><a href="membership.html">Membership</a></li>      
-          <li><a href="about.html">About</a></li>  
-        <h10 style="color:black;"> TRAIL FILTERS:</h10>
-        <li onclick="catSki();"><a href="#">Skiing Trails</a></li>   
-        <li onclick="catBiking();"><a href="#">Snowbiking Trails</a></li>
-        <li onclick="catShoe();"><a href="#">Snowshoeing Trails</a></li>
-        <li onclick="allTrailsStyle();"><a href="#">All Trails</a></li>
+      <ul class="side-nav" id="mobile-demo">          
+    <button class="dropdown-btn">Check Points 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">CP1.Europahütte</a>
+    <a href="#">CP2.Täschalp</a>
+    <a href="#">CP3.Zermatt</a>
+  </div>
+  <button class="dropdown-btn">Grächen 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">CP1.Europahütte</a>
+    <a href="#">CP2.Täschalp</a>
+    <a href="#">CP3.Zermatt</a>
+  </div>          
       </ul>        
     </div>
   </nav>
-        <script>
-            $('.button-collapse').sideNav({
-              menuWidth: 240, // Default is 240
-              edge: 'left', // Choose the horizontal origin
-              closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-             }
-            );
-            
-           
-        </script>
+    
+<script>
+    $('.button-collapse').sideNav({
+      menuWidth: 240, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+     }
+    );            
+
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+</script>
     
 <ul id="dropdown2" class="dropdown-content">
   <li onclick="fourStage(map);"><a href="#">4STAGE</a></li>
@@ -276,7 +349,7 @@ map.on('load', function () {
         }
     });*/
     
-     map.addSource('poi', { type: 'geojson', data: poiurl });
+    map.addSource('poi', { type: 'geojson', data: poiurl });
     map.addLayer({
         "id": "poi",
         "type": "symbol",        
@@ -306,6 +379,16 @@ map.on('load', function () {
             "icon-size": .1,
             "icon-allow-overlap": true
         }
+    });
+    
+    // Add popups for POIS
+    map.on('click', 'poi', function (e) {
+        var feature = e.features[0]; //get the properties of the clicked feature
+        console.log(feature);       
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)          
+            .setHTML('<b>'+feature.properties.name+'</b>')                   
+            .addTo(map); // Add the popup to the map        
     });
 });
 </script>
