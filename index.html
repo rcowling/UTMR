@@ -86,47 +86,11 @@ nav a.button-collapse {
 h10 {
     font-size: 20px;
     color: #E6A922;
-}    
-        
-        
+} 
+
 .dropdown-content li>a, .dropdown-content li>span {
     color: black;
-}
-        
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
- 
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-}
-        
-/* Main content */
-.main {
-  margin-left: 240px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */  
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: white;
-  padding-left: 8px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-  color: black;    
-}
+}        
         
 button:focus {
     background-color: white !important;
@@ -139,27 +103,24 @@ button:focus {
     <div class="nav-wrapper">         
       <a href="#!" class="brand-logo center" style="font-family: 'Kalam', cursive; font-size: 30px;">
       <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a> 
-      <img src="logo1.png" alt="utmr logo" style="width:82px;height:82px;padding-top:1px;">
-          
+      <img src="logo1.png" alt="utmr logo" style="width:82px;height:82px;padding-top:1px;">          
         <ul class="right hide-on-med-and-down">       
       </ul>
-      <ul class="side-nav" id="mobile-demo">          
-    <button class="dropdown-btn">Check Points 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">CP1.Europahütte</a>
-    <a href="#">CP2.Täschalp</a>
-    <a href="#">CP3.Zermatt</a>
-  </div>
-  <button class="dropdown-btn">Grächen 
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">CP1.Europahütte</a>
-    <a href="#">CP2.Täschalp</a>
-    <a href="#">CP3.Zermatt</a>
-  </div>          
+      <ul class="side-nav" id="mobile-demo">
+        <li onclick="map.jumpTo({center: [7.805944000, 46.105735000], zoom: 16});"><a href="#">CP1- Europahütte</a></li>   
+        <li onclick="map.jumpTo({center: [7.810188000, 46.059161000], zoom: 16});"><a href="#">CP2- Täschalp</a></li>
+        <li onclick="map.jumpTo({center: [7.749987500, 46.022643300], zoom: 16});"><a href="#">CP3- Zermatt</a></li>
+        <li onclick="map.jumpTo({center: [7.725352000, 45.964166000], zoom: 16});"><a href="#">CP4- Gandegghütte</a></li>
+        <li onclick="map.jumpTo({center: [7.680285000, 45.929611000], zoom: 16});"><a href="#">CP5- Lago Cima Bianche</a></li>
+        <li onclick="map.jumpTo({center: [7.740093000, 45.865984000], zoom: 16});"><a href="#">CP6- Rifugio Ferraro</a></li>   
+        <li onclick="map.jumpTo({center: [7.822732300, 45.831858700], zoom: 16});"><a href="#">CP7- Gressoney</a></li>
+        <li onclick="map.jumpTo({center: [7.866269000, 45.876187000], zoom: 16});"><a href="#">CP8- Passo dei Salati</a></li>
+        <li onclick="map.jumpTo({center: [7.938831000, 45.846666000], zoom: 16});"><a href="#">CP9- Alagna</a></li>
+        <li onclick="map.jumpTo({center: [7.977434000, 45.939759000], zoom: 16});"><a href="#">CP10- Quarazza</a></li>
+        <li onclick="map.jumpTo({center: [7.967820400, 45.968371100], zoom: 16});"><a href="#">CP11- Macugnaga</a></li>   
+        <li onclick="map.jumpTo({center: [7.978977000, 45.996607000], zoom: 16});"><a href="#">CP12- Passo Monte Moro</a></li>
+        <li onclick="map.jumpTo({center: [7.925103000, 46.107674000], zoom: 16});"><a href="#">CP13- SaasFee</a></li>
+        <li onclick="map.jumpTo({center: [7.867974000, 46.206339000], zoom: 16});"><a href="#">CP14- Hannigalp</a></li>          
       </ul>        
     </div>
   </nav>
@@ -170,22 +131,7 @@ button:focus {
       edge: 'left', // Choose the horizontal origin
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
      }
-    );            
-
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
+    );    
 </script>
     
 <ul id="dropdown2" class="dropdown-content">
@@ -205,9 +151,9 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/outdoors-v9',
     zoom: 9,
-	center: [7.838355,46.195098]
+	center: [7.9135967,45.9909764]
 });
-    
+
 // Add controls to the map
 // Add zoom and rotation controls to the map.
 map.addControl(new mapboxgl.NavigationControl());
@@ -358,7 +304,7 @@ map.on('load', function () {
         "id": "poi",
         "type": "symbol",        
         "source": "poi",
-        "minzoom": 12,
+        "minzoom": 12, // adjust zoom level at which symbols appear
         "layout": {
             "icon-image": [
                 'match',
@@ -403,10 +349,10 @@ map.on('load', function () {
         'type': 'symbol',
         'source': 'poi',
         //'source-layer': 'poi',
-        'minzoom': 12,
+        'minzoom': 12, // adjust the zoom level at which the labels appear
         'layout': {
             'symbol-placement': 'point',            
-            'text-font': ['Open Sans Regular'],
+            'text-font': ["Open Sans Regular", "Arial Unicode MS Regular"],
             'text-field': '{name}',
             'text-size': 12,
             "text-anchor": "bottom",
